@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>✨To-Do App</h1>
+            <button id="darkToggle">🌙</button>
+        </header>
+
+        <!-- Task Input Section -->
+        <div class="task-input">
+
+            <input type="text" id="titleInput" placeholder="Task Title">
+            <textarea id="descInput" placeholder="Description"></textarea>
+
+            <select id="categoryInput">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Study">Study</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button id="addBtn" onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Pending Tasks -->
+        <h2>Pending Tasks</h2>
+        <ul id="pendingList"></ul>
+
+        <!-- Completed Tasks -->
+        <h2>Completed Tasks</h2>
+        <ul id="completedList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
